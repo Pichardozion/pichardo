@@ -1,0 +1,18 @@
+1. En este ejemplo se agregan 2 columnasmás y cuando intentas hacer el makemigrations sale esta opcion:
+
+It is impossible to add the field 'created' with 'auto_now_add=True' to producto without providing a default. This is because the database needs something to populate existing rows.
+ 1) Provide a one-off default now which will be set on all existing rows
+ 2) Quit and manually define a default value in models.py.
+Select an option:
+
+2. Seleccionamos 1 para que python agregue valores...
+
+3. Please enter the default value as valid Python.
+Accept the default 'timezone.now' by pressing 'Enter' or provide another value.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+[default: timezone.now] >>>
+
+4. DAMOS ENTER:
+
+5. Ahora sí MIGRATE...

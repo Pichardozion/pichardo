@@ -1,0 +1,21 @@
+3. Abrir pgadmin4 
+
+	-En postgres -> click derecho -> Query tool -> En codigo ponemos: create database Articulos  y CORRER... 
+
+4. Instalar librería para agregar tablas. registros etc..
+
+en consola: pip install psycopg2
+
+5. Cambiar configuración en setting...
+
+6. Crear las tablas...
+
+	python manage.py makemigrations
+	python manage.py migrate
+
+Se borró superusuario..
+
+CREAR SUPERUSUARIO:
+
+	1. python manage.py createsuperuser
+		AGREGAS TODOS LOS DATOS...

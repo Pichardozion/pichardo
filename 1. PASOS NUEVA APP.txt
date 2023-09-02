@@ -1,0 +1,34 @@
+1. python manage.py startapp servicios
+
+2. Registrar la APP en "settings" (INSTALLED_APPS)
+
+3. Crear el mapeo ORM en models.py 
+
+4- cualquier cambia en los modelos hay que hacer las migraciones
+
+	python manage.py makemigrations
+	python manage.py migrate
+
+5. Registrar aplicación en panel de administración...
+	
+	Creas Superusuario -> python manage.py createsuperuser
+
+6. Modificación en admin.py de la APP
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+CUIDAR ESTA VARIABLE.. HASTA SUBIR EL PROYECTO A SERVIDOR CAMBIA A FALSE
+
+7. Para que las imagenes importadas se guarden en una carpeta específica que corresponda
+a la APP, modificar en settings:
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+previo se tuvo que haber creado la carpeta media en la raiz... y después modiicar en el modelo -> (upload_to="servicios")
+
+8. importar las direcciones en URLS de la APP principal..
+
+from django.conf import settings
+from django.conf.urls.static import static

@@ -1,0 +1,5 @@
+1. python manage.py startapp carro
+
+2. Registrar la APP en "settings" (INSTALLED_APPS)
+
+3. Crear archivo carro.py y hacer lo que viene en el ....

@@ -1,0 +1,18 @@
+1. pip install django-crispy-forms
+
+2. en registro.html:
+
+{% load crispy_forms_tags %}
+
+ETC...
+
+3. registrar en settings...
+ y al final:
+
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
+ERROR / SOLUCION:
+
+pip install crispy-bootstrap4
+
+AGREGAR: crispy_bootstrap4 en settings (INSTALLED_APPS)
